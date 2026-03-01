@@ -1,0 +1,88 @@
+:root {
+    --bg-color: #1a1a2e;
+    --card-bg: #16213e;
+    --accent-color: #0f3460;
+    --text-main: #e94560;
+    --neon-green: #00f5d4;
+    --error-red: #ff4d4d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: white;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 800px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 1rem;
+}
+
+h1 { margin: 0; color: var(--neon-green); letter-spacing: 2px; }
+
+.stats { display: flex; gap: 20px; font-weight: bold; font-size: 1.1rem; }
+
+.quote-display {
+    line-height: 1.6;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    word-spacing: 5px;
+    min-height: 120px;
+    padding: 15px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}
+
+.quote-input {
+    background-color: var(--accent-color);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    font-size: 1.2rem;
+    resize: none;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.quote-input:focus { border-color: var(--neon-green); }
+
+/* 字體顏色回饋 */
+.correct { color: var(--neon-green); }
+.incorrect { color: var(--error-red); text-decoration: underline; }
+
+.controls { margin-top: 20px; text-align: center; }
+
+button {
+    background-color: var(--text-main);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover { transform: scale(1.05); opacity: 0.9; }

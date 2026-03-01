@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonType | 線上英文打字挑戰</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>NeonType</h1>
+            <div class="stats">
+                <div class="stat-item">時間: <span id="timer">60</span>s</div>
+                <div class="stat-item">WPM: <span id="wpm">0</span></div>
+                <div class="stat-item">準確度: <span id="accuracy">100</span>%</div>
+            </div>
+        </header>
+
+        <div class="display-wrapper">
+            <div id="quote-display" class="quote-display"></div>
+            <textarea id="quote-input" class="quote-input" autofocus placeholder="準備好後直接開始輸入..."></textarea>
+        </div>
+
+        <div class="controls">
+            <button id="restart-btn">重新開始</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
